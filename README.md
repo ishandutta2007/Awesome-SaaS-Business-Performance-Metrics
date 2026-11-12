@@ -1,140 +1,145 @@
-# Awesome-SaaS-Business-Performance-Metrics
+<div align="center">
 
-# Awesome SaaS & Business Performance Metrics
+<img src="./assets/banner.svg" alt="Awesome SaaS &amp; Business Performance Metrics Banner" width="100%" />
 
-> A curated list of top SaaS and Business Performance Metrics platforms — both SaaS/Hosted commercial solutions and open-source alternatives for tracking MRR, ARR, churn, and the metrics that define business health.
-> 🌟 Star this repo if you find it useful! 🌟
+# 📊 Awesome SaaS &amp; Business Performance Metrics 🚀
 
----
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-SaaS-Business-Performance-Metrics/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-SaaS-Business-Performance-Metrics/graphs/commit-activity)
 
-## 📋 Table of Contents
+> **The definitive curated directory of SaaS revenue analytics, subscription business intelligence, and financial health metrics platforms.**  
+> Track **Monthly Recurring Revenue (MRR)**, **Annual Recurring Revenue (ARR)**, **Customer &amp; Revenue Churn**, **Customer Lifetime Value (LTV)**, and unit economics with hosted enterprise platforms and open-source, self-hosted tools.
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [ChartMogul](#chartmogul)
-  - [Baremetrics](#baremetrics)
-  - [ProfitWell Metrics](#profitwell-metrics)
-  - [Stripe Sigma](#stripe-sigma)
-  - [Databox](#databox)
-  - [Geckoboard](#geckoboard)
-- [Open-Source Software](#-open-source-software)
-  - [SaaSDashboard (bhattsaurya16)](#saasdashboard-bhattsaurya16)
-  - [Revenut](#revenut)
-  - [MRR Growth Analytics Dashboard](#mrr-growth-analytics-dashboard)
-  - [SaaSBoard](#saasboard)
-  - [ChurnLens](#churnlens)
-  - [Socketkit](#socketkit)
-  - [Chartbrew](#chartbrew)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+🌟 **Star this repository if you find it helpful for your SaaS financial stack!** 🌟
+
+</div>
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 📑 Table of Contents
 
-Commercial, cloud-hosted SaaS and Business Performance Metrics platforms. These are not open-source but are included as reference points for feature comparison.
-
-### ChartMogul
-**Type:** Subscription analytics and CRM with standardized SaaS metrics  
-ChartMogul connects to billing systems and consolidates subscription revenue, product usage, and marketing data into one platform, standardizing how metrics are calculated so every team works from the same numbers. Built-in reports cover MRR movements, churn, customer lifetime value, cohort retention, and more, with custom dashboards and the ability to send metrics to Slack, HubSpot, or data warehouses. It also functions as a CRM, giving sales and success teams a revenue-aware view of customers. Pricing scales with tracked revenue rather than seats.
-
-### Baremetrics
-**Type:** Subscription analytics with payment recovery add-ons  
-Baremetrics tracks over 28 subscription metrics including MRR, ARR, churn, upgrades, and downgrades, priced on tracked revenue rather than per seat. The free tier covers up to $180K ARR, with paid plans scaling to $409/month for larger businesses. Optional add-ons include **Payment Recovery** ($129/month or 10% of recovered revenue) and **Cancellation Insights** ($129/month) for churn feedback collection. Known for clean dashboards and accessible pricing for early-stage SaaS.
-
-### ProfitWell Metrics
-**Type:** Free subscription analytics with benchmarking  
-ProfitWell Metrics is **free forever, regardless of business size**, offering growth, revenue, retention, and churn trends, unit economics, cohorts, and benchmarks from 15,000+ subscription companies. Setup is quick (5 minutes), with native integrations and APIs, enrichment via Clearbit and FullContact, and a mobile app with intelligent alerting. Paid add-ons include Retain (churn recovery), Recognized (revenue recognition), and Price Intelligently (pricing strategy). The free tier makes it uniquely accessible for SaaS businesses at any stage.
-
-### Stripe Sigma
-**Type:** SQL-based analytics layer within Stripe  
-Stripe Sigma is a SQL-powered analytics layer built into the Stripe Dashboard, enabling custom queries against live payment and billing data. It includes pre-built templates for common SaaS questions (MRR trends, active subscriptions, churned customers, failed payments) and an **AI Assistant** that generates SQL from plain English. Sigma allows unlimited customization without fixed dashboards, with a 30-day free trial before paid subscription. **Trade-off:** Requires SQL knowledge for non-template queries, and it is limited to Stripe data only.
-
-### Databox
-**Type:** Business dashboard and reporting platform  
-Databox connects to hundreds of data sources (including Stripe, HubSpot, and Google Analytics) to build customizable dashboards and reports. It is a general-purpose business analytics platform rather than a dedicated SaaS metrics tool, but it is commonly used by SaaS teams to visualize MRR and churn alongside other KPIs.
-
-### Geckoboard
-**Type:** Real-time KPI dashboard for teams  
-Geckoboard provides real-time dashboards that pull from various data sources, designed to be displayed on office TVs for team visibility. It supports Stripe and other SaaS tools, making it useful for keeping MRR and churn visible to the whole team.
+- [🌐 Sector Overview &amp; Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [💻 Open-Source &amp; Self-Hosted Software](#-open-source--self-hosted-software)
+- [⚖️ Feature &amp; Capability Comparison](#-feature--capability-comparison)
+- [💡 Key SaaS Metrics Formula Cheat Sheet](#-key-saas-metrics-formula-cheat-sheet)
+- [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [📜 License](#-license)
 
 ---
 
-## 🟩 Open-Source Software
+## 🌐 Sector Overview &amp; Market Dynamics
 
-Self-hosted, community-driven SaaS and Business Performance Metrics tools. The open-source ecosystem spans **AI-powered analytics dashboards**, **Stripe forecasting apps**, **MRR tracking boilerplates**, and **self-hosted metric calculators**.
-
-### SaaSDashboard (bhattsaurya16)
-**Stack:** Python / Streamlit / Gemini AI | **License:** Open Source (per GitHub)  
-SaaSDashboard is an AI-powered analytics dashboard for SaaS customer data and general business datasets, offering churn, MRR, cohort retention, revenue loss, and quant forecasts [citation:1]. It supports flexible data input (default CSV, file upload of CSV/Excel, or SQL database query) and includes a generic dataset explorer for non-SaaS schemas. **Gemini AI insights** generate executive summaries, risks, opportunities, and action plans [citation:1]. Deploys via Streamlit Community Cloud, Render, or Docker.  
-**Best for:** Teams wanting a ready-to-run Streamlit dashboard with AI-generated insights from their CSV or database data, particularly those comfortable with Python and Google Gemini.
-
-### Revenut
-**Stack:** FastAPI / Python / React Native (Expo) | **License:** Apache 2.0  
-Revenut is a web + mobile (PWA) app with Stripe integration for forecasting SaaS revenue, built as a lightweight open-source alternative to Stripe's mobile app after the developer experienced fraudulent card testing polluting revenue reports [citation:6]. Key features include excluding disputed and refunded transactions for accurate reporting, calculating **unrealized ("paper") revenue** from trialing customers and upcoming invoices, and calculating realized revenue from paid invoices [citation:6]. Authentication uses Stripe's browser-based OAuth for secure login.  
-**Best for:** Freemium SaaS owners wanting accurate revenue forecasting that excludes fraudulent transactions, with mobile access via PWA, accepting that it is Stripe-specific.
-
-### MRR Growth Analytics Dashboard
-**Stack:** React 19 / Express 5 / PostgreSQL / Drizzle ORM | **License:** Open Source (boilerplate)  
-A full-stack TypeScript monorepo designed for indie developers and solo founders to track MRR, customer growth, churn, refunds, and other key business metrics without enterprise complexity [citation:7]. Features include tracking monthly recurring revenue, monitoring customer acquisition and churn, visualizing revenue trends with interactive charts, configuring growth targets, and viewing automatically calculated SaaS KPIs (Net MRR Growth Rate, Churn Rate, ARPU) [citation:7]. The backend exposes a REST API with full CRUD for monthly metrics and a summary endpoint for calculated KPIs. Includes seed data for immediate realistic display.  
-**Best for:** Indie developers and solo founders wanting a clean, modern MRR dashboard boilerplate they can extend, particularly those comfortable with the React/Express/PostgreSQL stack.
-
-### SaaSBoard
-**Stack:** React / Vite / Tailwind CSS / Radix UI | **License:** Open Source (per GitHub)  
-SaaSBoard is a free, open-source SaaS dashboard template built with React and Tailwind, providing pre-built layouts for metrics visualization, reports, billing management, and team settings [citation:2]. It is a **template** rather than a working analytics backend—it provides the UI components and pages for tracking KPIs, managing SaaS metrics, and designing professional dashboards, but does not include data ingestion or calculation logic [citation:2].  
-**Best for:** Developers wanting a polished, ready-made React dashboard UI to customize and connect to their own metrics backend, rather than a complete analytics solution.
-
-### ChurnLens
-**Stack:** Python / Docker | **License:** Source-available (COCL v1.0)  
-ChurnLens is a self-hosted tool that calculates MRR, customer churn rate, and LTV from a CSV file or Stripe data, running entirely on your own computer or server with no account, third-party service, or monthly fee . It is single-purpose, scriptable, CI-friendly, and callable by AI agents over MCP . **Important licensing note:** Source-available under the Cognis Open Collaboration License (COCL) v1.0 — free for personal, internal-evaluation, research, and educational use, but **commercial/production use requires a license** .  
-**Best for:** Founders and finance teams wanting a simple, self-hosted CSV/Stripe metric calculator without a SaaS subscription, accepting source-available licensing with commercial restrictions.
-
-### Socketkit
-**Stack:** Go / gRPC | **License:** Open Source (per GitHub)  
-Socketkit is a free open-source alternative to ChartMogul, SensorTower, Google Analytics, and Mixpanel, focused on mobile application developers [citation:10]. It includes an **AppStore Subscription Tracking** worker with built-in integration with AppStore Connect that retrieves and analyzes daily payments, storing data normalized with currency conversion and providing reports for **Monthly Recurring Revenue (MRR)**, Average Revenue Per User (ARPU), and Daily Revenue [citation:10]. It also includes competitor tracking (AppStore metadata and reviews) and real-time notifications. **Note:** The project has not been updated since 2022—evaluate maintenance status before adoption [citation:10].  
-**Best for:** Mobile app developers wanting open-source AppStore subscription analytics with MRR and ARPU tracking, accepting that the project is dormant and iOS-focused.
-
-### Chartbrew
-**Stack:** Node.js / React / PostgreSQL | **License:** Open Source (per GitHub)  
-Chartbrew is an open-source web application that connects directly to databases and APIs to create charts and dashboards, with a chart builder, editable dashboards, embeddable charts, query/request editor, and team capabilities . It includes **dashboard templates** with charts already prepared for Simple Analytics, **ChartMogul**, and Mailgun, or you can create custom templates and replicate them across multiple dashboards . While not a dedicated SaaS metrics tool, it can be used to build custom MRR/ARR dashboards from your billing data.  
-**Best for:** Teams wanting a flexible, open-source dashboard builder that can connect to Stripe or databases to create custom SaaS metric visualizations, accepting that metric logic must be defined yourself.
+> 💡 **Market Size &amp; Growth**: The global SaaS business and subscription analytics market is valued between **$14B and $16B+**, growing rapidly at a compound annual growth rate (**CAGR of ~14–15%**) toward an estimated **$40B–$60B** over the next decade as cloud subscription business models continue to dominate software delivery.
+> 
+> 🧩 **Market Fragmentation**: The sector is **moderately fragmented**: specialized niche tools thrive by offering targeted billing and subscription metric calculations (e.g., automated MRR waterfalls, cohort retention, and dunning workflows), while massive enterprise cloud conglomerates (e.g., Salesforce/Tableau, Microsoft Power BI, Stripe) maintain heavy concentration across core enterprise data pipelines and billing rails.
 
 ---
 
-## 📊 Comparison at a Glance
+## 🏢 SaaS / Hosted Commercial Platforms
 
-| Software | License | Stack | MRR/ARR | Churn | AI Insights | Self-Hosted | Best For |
-|----------|---------|-------|---------|-------|-------------|-------------|----------|
-| **ChartMogul** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Cross-system metric consistency |
-| **Baremetrics** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Accessible core analytics |
-| **ProfitWell** | Proprietary | Cloud | ✅ | ✅ | ❌ | ❌ | Free + benchmarks |
-| **Stripe Sigma** | Proprietary | Cloud | ✅ SQL | ✅ | ✅ SQL assistant | ❌ | Stripe-native SQL flexibility |
-| **SaaSDashboard** | Open Source | Streamlit | ✅ | ✅ | ✅ Gemini | ✅ | AI insights from CSV/DB |
-| **Revenut** | Apache 2.0 | FastAPI/React Native | ✅ | (Forecast) | ❌ | ✅ | Stripe revenue forecasting |
-| **MRR Growth Dashboard** | Open Source | React/Express/Postgres | ✅ | ✅ | ❌ | ✅ | Indie dev MRR boilerplate |
-| **SaaSBoard** | Open Source | React/Tailwind | (UI only) | (UI only) | ❌ | ✅ | Dashboard UI template |
-| **ChurnLens** | Source-available | Python | ✅ | ✅ | ❌ | ✅ | CSV/Stripe CLI calculator |
-| **Socketkit** | Open Source | Go/gRPC | ✅ | (Check) | ❌ | ✅ | AppStore subscription analytics |
-| **Chartbrew** | Open Source | Node.js/React | (Custom) | (Custom) | ❌ | ✅ | Custom dashboard builder |
+Commercial, turnkey subscription analytics and business intelligence solutions. The table below is sorted by **Company Size / Valuation (Descending)**.
+
+| 🏢 Platform | 💰 Company Valuation / ARR | 🏷️ Starting Paid Tier | 🎁 Free Tier / Free Trial Limits | 🎯 Primary Focus &amp; Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Stripe Sigma](https://stripe.com/sigma)** | **$159.0B Valuation** (~$6.8B Rev) | **$10/month** (up to 250 charges) + $0.02/extra charge | **30-Day Free Trial**; unlimited test queries in Stripe Sandbox | In-dashboard SQL reporting engine with AI query assistant running directly on live Stripe payment &amp; charge logs. |
+| **[ProfitWell Metrics](https://www.profitwell.com/recur/metrics)** | **$200.0M Acquired** (by Paddle, $1.4B Val) | **$0/month** (Core Metrics free; monetizes on Paddle Merchant of Record &amp; add-ons) | **100% Free Forever** (Unlimited revenue tracking, churn analytics, cohorts, and benchmarks for 15,000+ companies) | Standardized financial subscription metrics, cohort retention curves, benchmark comparisons, and zero tracking fees. |
+| **[ChartMogul](https://chartmogul.com)** | **~$10.0M ARR** (Private / Bootstrapped) | **$57/month** (billed annually) for >$10K MRR | **Free Forever up to $10,000 MRR** ($120K ARR limit); 14-day free trial on higher tiers | Automated subscription analytics consolidating Stripe, Chargebee, Recurly, and App Store data into real-time MRR waterfalls and B2B CRM. |
+| **[Databox](https://databox.com)** | **~$8.4M ARR** (~$4.8M funding) | **$71/month** (billed annually for Starter plan) | **Free Forever Plan** (Limited to 3 data sources, 1 dashboard, 10 custom metrics, 1 user, daily syncs) | Multi-source KPI executive dashboard integrating Stripe, Google Analytics, CRM, and databases into unified TV/mobile dashboards. |
+| **[Baremetrics](https://baremetrics.com)** | **$4.0M Acquired** (by Xenon Partners) | **$49/month** (billed annually for Launch plan up to $360K ARR) | **14-Day Free Trial** with full feature access and unlimited integrations (no permanent free plan) | Clean, founder-friendly subscription metrics tracking 28+ KPIs with integrated payment recovery (Recover) and cancellation surveys. |
+| **[Geckoboard](https://www.geckoboard.com)** | **~$3.5M ARR** (~$1.5M funding) | **$60/month** (billed annually for Essential plan) | **14-Day Free Trial** including 1 dashboard &amp; 1 edit seat (no permanent free plan) | Real-time TV KPI metric boards designed for team dashboards, integrating payment, CRM, and server metrics with Slack broadcast loops. |
 
 ---
 
-## 🤝 Contributing
+## 💻 Open-Source &amp; Self-Hosted Software
 
-Contributions are welcome! If you know of an open-source SaaS or Business Performance Metrics tool that should be listed here, please open a pull request with:
+Self-hosted, transparent, and developer-friendly alternatives to proprietary subscription analytics tools. Projects below are sorted by **GitHub Stars (Descending)**.
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source (or clearly note if it is source-available but not OSI-approved, as with ChurnLens). Note that the open-source ecosystem **splits** between **AI-powered analytics dashboards** (SaaSDashboard with Gemini insights [citation:1]), **Stripe-specific forecasting apps** (Revenut for accurate revenue excluding fraud [citation:6]), **MRR tracking boilerplates** (MRR Growth Analytics Dashboard for indie devs [citation:7]), **UI templates** (SaaSBoard [citation:2]), **self-hosted metric calculators** (ChurnLens ), and **flexible dashboard builders** (Chartbrew ). No single open-source project replicates the full breadth of ChartMogul or ProfitWell, but SaaSDashboard offers the most complete working analytics with AI insights, while Revenut and the MRR Growth Dashboard provide focused, Stripe-centric solutions for specific use cases.
+| 📦 Repository | ⭐ Stars | 🛠️ Tech Stack | 📜 License | 🎯 Description &amp; Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Lago](https://github.com/getlago/lago)** | [![Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) | Ruby / Go / React | AGPL-3.0 | Open-source meter-based usage and subscription billing infrastructure. Provides raw event metering, invoice generation, customer usage analytics, and native MRR tracking. |
+| **[Kill Bill](https://github.com/killbill/killbill)** | [![Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) | Java / OSGi | Apache 2.0 | Battle-tested enterprise open-source subscription management and payment orchestration engine with built-in financial reporting, invoice metrics, and audit logs. |
+| **[Chartbrew](https://github.com/chartbrew/chartbrew)** | [![Stars](https://img.shields.io/github/stars/chartbrew/chartbrew?style=social&color=white)](https://github.com/chartbrew/chartbrew/stargazers) | Node.js / React / PostgreSQL | Apache 2.0 | Open-source BI reporting platform to build live KPI dashboards from SQL/NoSQL databases, Stripe, and ChartMogul APIs with an embedded AI chart builder. |
+| **[Socketkit](https://github.com/anonrig/socketkit)** | [![Stars](https://img.shields.io/github/stars/anonrig/socketkit?style=social&color=white)](https://github.com/anonrig/socketkit/stargazers) | Go / gRPC | MIT | Open-source alternative to ChartMogul and SensorTower for mobile app developers; syncs with App Store Connect to report MRR, ARPU, currency conversion, and churn. |
+| **[Pulse](https://github.com/mike-paper/pulse)** | [![Stars](https://img.shields.io/github/stars/mike-paper/pulse?style=social&color=white)](https://github.com/mike-paper/pulse/stargazers) | TypeScript / Next.js | MIT | Modern open-source SaaS metrics application built to ingest billing webhooks and produce instant churn, growth, and recurring revenue dashboards. |
+| **[Twitter Stripe MRR](https://github.com/jsjoeio/twitter-stripe-mrr)** | [![Stars](https://img.shields.io/github/stars/jsjoeio/twitter-stripe-mrr?style=social&color=white)](https://github.com/jsjoeio/twitter-stripe-mrr/stargazers) | Node.js / JavaScript | MIT | Automated build in public utility that calculates real-time net Monthly Recurring Revenue via the Stripe API and keeps social profiles or status dashboards updated. |
+| **[dbt-stripe](https://github.com/fivetran/dbt_stripe)** | [![Stars](https://img.shields.io/github/stars/fivetran/dbt_stripe?style=social&color=white)](https://github.com/fivetran/dbt_stripe/stargazers) | SQL / dbt | Apache 2.0 | Industry-standard open-source dbt package that models raw Stripe billing datasets into data warehouse tables for Daily MRR, Churn, Active Subscriptions, and LTV. |
+| **[Revenut](https://github.com/hbcondo/revenut-app)** | [![Stars](https://img.shields.io/github/stars/hbcondo/revenut-app?style=social&color=white)](https://github.com/hbcondo/revenut-app/stargazers) | FastAPI / React Native (PWA) | Apache 2.0 | Lightweight mobile &amp; web revenue forecasting app for Stripe that excludes fraud and card testing charges while calculating unrealized upcoming invoice MRR. |
+| **[SaaSBoard](https://github.com/MekuHQ/saasboard)** | [![Stars](https://img.shields.io/github/stars/MekuHQ/saasboard?style=social&color=white)](https://github.com/MekuHQ/saasboard/stargazers) | React / Vite / Tailwind CSS | MIT | Clean, responsive open-source SaaS dashboard template featuring ready-to-wire cards for MRR, active users, subscription distribution, and churn charts. |
+| **[MRRmaid](https://github.com/ctrlaltdylan/MRRmaid)** | [![Stars](https://img.shields.io/github/stars/ctrlaltdylan/MRRmaid?style=social&color=white)](https://github.com/ctrlaltdylan/MRRmaid/stargazers) | Go / Terminal TUI | MIT | Terminal CLI dashboard for indie hackers tracking MRR, Net Revenue Retention (NRR), customer churn, and customer concentration across Stripe and Shopify Partners. |
+| **[MRR Growth Dashboard](https://github.com/suzuki-429/MRR-Growth-Analytics-Dashboard)** | [![Stars](https://img.shields.io/github/stars/suzuki-429/MRR-Growth-Analytics-Dashboard?style=social&color=white)](https://github.com/suzuki-429/MRR-Growth-Analytics-Dashboard/stargazers) | React 19 / Express / PostgreSQL | MIT | Monorepo boilerplate for indie developers featuring full CRUD for monthly subscription revenue, automatic Net MRR growth calculation, and interactive charts. |
+| **[stripemetrics](https://github.com/igorbenav/stripemetrics)** | [![Stars](https://img.shields.io/github/stars/igorbenav/stripemetrics?style=social&color=white)](https://github.com/igorbenav/stripemetrics/stargazers) | Python | MIT | Simple, scriptable Python library to pull transactions directly from the Stripe API and extract MRR breakdown, customer counts, and churn curves. |
+| **[ChurnLens](https://github.com/kindrat86/churnlens)** | [![Stars](https://img.shields.io/github/stars/kindrat86/churnlens?style=social&color=white)](https://github.com/kindrat86/churnlens/stargazers) | Python / Docker | COCL v1.0 | Self-hosted CLI and MCP server that computes SaaS revenue-quality, cohort churn risk, and customer lifetime value from CSV or Stripe exports. |
+| **[SaaSDashboard](https://github.com/bhattsaurya16/SaaSDashboard)** | [![Stars](https://img.shields.io/github/stars/bhattsaurya16/SaaSDashboard?style=social&color=white)](https://github.com/bhattsaurya16/SaaSDashboard/stargazers) | Python / Streamlit / Gemini AI | MIT | AI-powered analytics dashboard for customer CSV datasets offering MRR movement breakdown, churn risk factors, and automated Gemini AI strategic insights. |
 
 ---
 
-## 📄 License
+## ⚖️ Feature &amp; Capability Comparison
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+| Solution | Deployment | Primary Billing Sources | Real-Time MRR | Churn Analysis | Cohort Retention | AI / SQL Assistant | Self-Hosted |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **ChartMogul** | Hosted Cloud | Stripe, Chargebee, Recurly, Braintree, PayPal, App Store | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Baremetrics** | Hosted Cloud | Stripe, Braintree, Recurly, App Store | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **ProfitWell** | Hosted Cloud | Stripe, Braintree, Paddle, Chargebee, Zuora | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Stripe Sigma** | Hosted Cloud | Stripe Only | ✅ | ✅ | ✅ | ✅ (AI SQL) | ❌ |
+| **Databox** | Hosted Cloud | 100+ Connectors (Stripe, HubSpot, GA4) | ✅ | ✅ | ⚠️ (Basic) | ❌ | ❌ |
+| **Geckoboard** | Hosted Cloud | 80+ Connectors (Stripe, Spreadsheets) | ✅ | ⚠️ (Basic) | ❌ | ❌ | ❌ |
+| **Lago** | Self-Hosted / Cloud | Native Engine + Payment Gateways | ✅ | ✅ | ✅ | ❌ | ✅ |
+| **Kill Bill** | Self-Hosted | Multi-Payment Gateway (Stripe, Adyen, PayPal) | ✅ | ✅ | ⚠️ (Plugins) | ❌ | ✅ |
+| **Chartbrew** | Self-Hosted / Cloud | Stripe, ChartMogul, SQL, Mongo, APIs | ✅ | ✅ | ⚠️ (Custom) | ✅ | ✅ |
+| **dbt-stripe** | Warehouse (dbt) | Stripe Raw Data | ✅ | ✅ | ✅ | ❌ | ✅ |
+| **Pulse** | Self-Hosted | Stripe / Webhooks | ✅ | ✅ | ⚠️ (Basic) | ❌ | ✅ |
+| **Revenut** | Self-Hosted | Stripe API | ✅ | ⚠️ (Forecast) | ❌ | ❌ | ✅ |
+| **SaaSDashboard** | Self-Hosted | CSV / SQL / Database | ✅ | ✅ | ✅ | ✅ (Gemini) | ✅ |
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+## 💡 Key SaaS Metrics Formula Cheat Sheet
+
+Here is a quick reference for the mathematical definitions of the core business metrics tracked across these platforms:
+
+- **Monthly Recurring Revenue (MRR)**:
+  $$\text{MRR} = \sum (\text{Active Paying Customers} \times \text{Monthly Subscription Price})$$
+- **Net New MRR**:
+  $$\text{Net New MRR} = \text{New MRR} + \text{Expansion MRR} - \text{Contraction MRR} - \text{Churned MRR}$$
+- **Annual Recurring Revenue (ARR)**:
+  $$\text{ARR} = \text{MRR} \times 12$$
+- **Gross Customer Churn Rate**:
+  $$\text{Customer Churn Rate (\%)} = \left( \frac{\text{Customers Lost in Period}}{\text{Total Customers at Start of Period}} \right) \times 100$$
+- **Net Revenue Retention (NRR)**:
+  $$\text{NRR (\%)} = \left( \frac{\text{Starting MRR} + \text{Expansion} - \text{Contraction} - \text{Churn}}{\text{Starting MRR}} \right) \times 100$$
+- **Customer Lifetime Value (LTV)**:
+  $$\text{LTV} = \frac{\text{Average Revenue Per User (ARPU)}}{\text{User Churn Rate}}$$
+- **LTV to CAC Ratio**:
+  $$\text{Efficiency} = \frac{\text{LTV}}{\text{Customer Acquisition Cost (CAC)}} \quad (\text{Target: } \ge 3.0\times)$$
+
+---
+
+## 🤝 Contributing Guidelines
+
+Contributions, suggestions, and corrections are warmly welcome! 💖
+
+1. **Fork the repo** and create your branch: `git checkout -b feature/new-saas-tool`
+2. **Add tool details** following the existing format:
+   - Name &amp; repository or product link
+   - Precise pricing / Free tier limit (no generic placeholders)
+   - GitHub star count badge (for open-source tools, style=social and color=white)
+   - Tech stack and license
+3. **Open a Pull Request** with a brief summary of why the tool is a great addition to the ecosystem.
+
+---
+
+## 📜 License
+
+This compilation is licensed under the [Creative Commons Zero v1.0 Universal](LICENSE) (CC0 1.0 - Public Domain Dedication).  
+Individual tools and software listed retain their respective copyrights and licenses.
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#-awesome-saas--business-performance-metrics-)**
+
+</div>
