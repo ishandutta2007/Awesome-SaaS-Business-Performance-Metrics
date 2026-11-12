@@ -59,9 +59,9 @@ Commercial, turnkey subscription analytics and business intelligence solutions. 
 
 ## 💻 Open-Source &amp; Self-Hosted Software
 
-Self-hosted, transparent, and developer-friendly alternatives to proprietary subscription analytics tools. Projects below are sorted by **GitHub Stars (Descending)**.
+Self-hosted, transparent, and developer-friendly alternatives to proprietary subscription analytics tools. Projects below are sorted by **GitHub_Stars (Descending)**.
 
-| 📦 Repository | ⭐ Stars | 🛠️ Tech Stack | 📜 License | 🎯 Description &amp; Highlights |
+| 📦 Repository | ⭐ GitHub_Stars | 🛠️ Tech Stack | 📜 License | 🎯 Description &amp; Highlights |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Lago](https://github.com/getlago/lago)** | [![Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) | Ruby / Go / React | AGPL-3.0 | Open-source meter-based usage and subscription billing infrastructure. Provides raw event metering, invoice generation, customer usage analytics, and native MRR tracking. |
 | **[Kill Bill](https://github.com/killbill/killbill)** | [![Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) | Java / OSGi | Apache 2.0 | Battle-tested enterprise open-source subscription management and payment orchestration engine with built-in financial reporting, invoice metrics, and audit logs. |
@@ -143,7 +143,7 @@ Contributions, suggestions, and corrections are warmly welcome! 💖
 2. **Add tool details** following the existing format:
    - Name &amp; repository or product link
    - Precise pricing / Free tier limit (no generic placeholders)
-   - GitHub star count badge (for open-source tools, style=social and color=white)
+   - GitHub Stars_Count badge (for open-source tools, style=social and color=white)
    - Tech stack and license
 3. **Open a Pull Request** with a brief summary of why the tool is a great addition to the ecosystem.
 
