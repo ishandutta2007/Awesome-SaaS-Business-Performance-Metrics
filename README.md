@@ -4,10 +4,12 @@
 
 # 📊 Awesome SaaS &amp; Business Performance Metrics 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&looo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-SaaS-Business-Performance-Metrics/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-SaaS-Business-Performance-Metrics/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > **The definitive curated directory of SaaS revenue analytics, subscription business intelligence, and financial health metrics platforms.**  
 > Track **Monthly Recurring Revenue (MRR)**, **Annual Recurring Revenue (ARR)**, **Customer &amp; Revenue Churn**, **Customer Lifetime Value (LTV)**, and unit economics with hosted enterprise platforms and open-source, self-hosted tools.
@@ -25,7 +27,9 @@
 - [💻 Open-Source &amp; Self-Hosted Software](#-open-source--self-hosted-software)
 - [⚖️ Feature &amp; Capability Comparison](#-feature--capability-comparison)
 - [💡 Key SaaS Metrics Formula Cheat Sheet](#-key-saas-metrics-formula-cheat-sheet)
+- [💖 Support](#-support)
 - [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [📈 Star History](#-star-history)
 - [📜 License](#-license)
 
 ---
@@ -117,6 +121,20 @@ Here is a quick reference for the mathematical definitions of the core business 
 
 ---
 
+## 💖 Support
+
+Thank you so much for exploring and supporting this curated resource! 🙏  
+If you find this repository valuable for tracking your business metrics, building SaaS analytics, or exploring open-source financial tools, please consider supporting the project:
+
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** it and submit tools or improvements to grow the list.
+- 📢 **Share** it with fellow founders, finance teams, indie hackers, and SaaS developers.
+- ☕ **Buy me a coffee**: If you'd like to support ongoing curation and maintenance, consider sponsoring via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github)](https://github.com/sponsors/ishandutta2007)
+
+---
+
 ## 🤝 Contributing Guidelines
 
 Contributions, suggestions, and corrections are warmly welcome! 💖
@@ -128,6 +146,11 @@ Contributions, suggestions, and corrections are warmly welcome! 💖
    - GitHub star count badge (for open-source tools, style=social and color=white)
    - Tech stack and license
 3. **Open a Pull Request** with a brief summary of why the tool is a great addition to the ecosystem.
+
+---
+
+##  Star History
+[![Star History Chart](https://www.star-history.comssvg?repos=ishandutta2007/Awesome-SaaS-Business-Performance-Metrics&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-SaaS-Business-Performance-Metrics&type=date&legend=top-left)
 
 ---
 
